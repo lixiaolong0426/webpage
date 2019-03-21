@@ -409,10 +409,10 @@ var Pointer = function (_VNode) {
     function Pointer(canvas) {
         _classCallCheck(this, Pointer);
         var _this = _possibleConstructorReturn(this, (Pointer.__proto__ || Object.getPrototypeOf(Pointer)).call(this, {
-            x: 0,
-            y: 0,
-            w: 8,
-            color: '#F00',
+            x: 2,
+            y: 2,
+            w: 2,
+            color: '#FFFFFF',
             fixed: true
         }));
         _this.elem = canvas;
