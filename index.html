@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<link href="#" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1086271_84fdhn8j8a5.css">
+	<link rel="stylesheet" href="css/bgstyle.css">
+	<script src="js/cord.js"></script>
+	<style>
+		#canvas {
+			display: fixed ;
+			margin: auto;
+			margin-bottom: 1em;
+			max-width: 100%;
+			height: auto;
+			z-index: 1;
+			opacity: 0.8;
+			float: left;
+			position: absolute;
+            top: 0; right: 0; left: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<audio controls autoplay>
+		<source src="mp3/zzsc.mp3"></audio>
+
+
+	<!-- 背景动画 -->
+	<div id="midground" class="wall"></div>
+	<div id="foreground" class="wall"></div>
+	<div id="top" class="wall"></div>
+
+
+	<canvas id="canvas" width="900px" height="270px"></canvas>
+
+	<!-- 导航 -->
+	<div class="nav">
+		<div class="logo">
+		</div>
+		<div class="main-menu">
+			<ul>
+				<li>
+					<a href="html/teammates.html" class="people">
+						<i></i>
+						<span>TEAMMATE</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="pictures">
+						<i></i>
+						<span>PHOTOS</span>
+					</a>
+
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!-- 照片墙 -->
+	<div class="photos">
+		<div class="container">
+			<ul id="hexGrid">
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/3.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/1.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div id="newpost" style="display:none; " class="container">
+			<ul id="hexGrid">
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2019.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/1.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/2.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+				<li class="hex">
+					<a class="hexIn" href="#">
+						<img src="images/3.jpg" alt="" />
+						<h1>This is a title</h1>
+						<p>Some sample text about the article this hexagon leads to</p>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="templatemo_loadmore">
+					<button class="gallery_more" id="button" onClick="showhide()">还没看够？</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		function showhide() {
+			var div = document.getElementById("newpost");
+			if (div.style.display !== "none") {
+				div.style.display = "none";
+			} else {
+				div.style.display = "block";
+			}
+		}
+		$('.gallery_more').click(function () {
+			$("#button").toggleClass('gallery_more');
+			if ($("#button").hasClass('gallery_more')) {
+				$("#button").text('还没看够？');
+			} else {
+				$("#button").text('真的没有了！');
+			}
+		});
+	</script>
+
+	<script>
+		"use strict";
+		var scene = new Scene(document.querySelector('#canvas'));
+		scene.run();
+		var phrase = ' WE ARE FAMILY ';
+		var r = new Rope({
+			x: scene.canvas.width * 0.15,
+			y: 40,
+			length: scene.canvas.width * 0.7,
+			points: phrase.length,
+			vertical: false,
+			dangleEnd: false,
+			fixedEnds: true,
+			stiffness: 1.5,
+			constrain: false,
+			gravity: 0.1
+		});
+		var center = r.nodes.length / 2;
+		var ropes = r.nodes.map(function (n, i) {
+			n.set(n.x, 60 + 80 * (1 - Math.abs((center - i) % center / center)));
+			if (phrase[i] !== ' ') {
+				return new Rope({
+					startNode: n,
+					x: n.x,
+					y: n.y,
+					length: 60,
+					points: 4,
+					letter: phrase[i],
+					vertical: true,
+					stiffness: 1,
+					constrain: false,
+					gravity: 0.5
+				});
+			}
+		});
+		var first = r.nodes[0];
+		var last = r.nodes[r.nodes.length - 1];
+		first.set(2, -2);
+		last.set(scene.canvas.width - 2, -2);
+		r.makeConstraints();
+		ropes = ropes;
+		scene.addRope(r);
+		ropes.filter(function (r) {
+			return r;
+		}).forEach(function (r) {
+			r.makeConstraints();
+			scene.addRope(r);
+		});
+	</script>
+</body>
+
+</html>

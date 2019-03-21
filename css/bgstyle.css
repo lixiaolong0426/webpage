@@ -1,0 +1,68 @@
+
+/*bgm*/
+audio{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+audio:hover{
+    opacity: 1;
+}
+
+/* 背景动画 */
+.wall{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+div#midground{
+    position: fixed;
+    background: url("../images/midground.png");
+    z-index: -3;
+    -webkit-animation: cc 100s linear infinite;
+    animation: cc 100s linear infinite;  
+}
+div#foreground{
+    position: fixed;
+    background-image: url('../images/foreground.png');
+    z-index: -1;
+    -webkit-animation: cc 153s linear infinite;
+    animation: cc 153s linear infinite;
+}
+div#top{
+    position: fixed;
+    background-image: url('../images/midground.png');
+    z-index: -2;
+    -webkit-animation: dd 50s linear infinite;
+    animation: dd 50s linear infinite;
+}
+
+@keyframes cc {
+    from{
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+    to{
+        background-position: 600% 0;
+    }
+}
+
+@keyframes dd {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+}
+
+
