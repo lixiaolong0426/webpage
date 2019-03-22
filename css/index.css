@@ -17,6 +17,7 @@ a{
     height: 200px;
     position: relative;
     float: right;
+    z-index: 2;
 }
 .logo{
     position: absolute;
@@ -169,7 +170,7 @@ a{
             transform:translateY(100%) translatez(-1px);
 }
 #newpost{
-    margin-top: -70px;
+    margin-top: -20px;
 }
 .templatemo_loadmore{
     margin: 0 auto;
